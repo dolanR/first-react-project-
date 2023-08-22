@@ -40,7 +40,7 @@ function App() {
       <p id="text">{quote}</p>
       <p id="author">- {author}</p>
       <div id="box-footer" class="flex">
-        <a id="tweet-quote" href="twitter.com/intent/tweet" target="_blank"><FaTwitterSquare class="icon"/></a>
+        <a id="tweet-quote" href="https://twitter.com/intent/tweet" target="_blank"><FaTwitterSquare class="icon"/></a>
         <button id="new-quote" onClick={() => quoteGen(quotesWithAuthors)}>New quote</button>
       </div>
     </div>
