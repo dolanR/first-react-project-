@@ -8,21 +8,24 @@
   align-items: center;
   width: 500px;
   height: 100%;
+  padding: 1.5rem;
   background-color: white;
-  margin: 0;
-  padding: 2rem;
   border-radius: 0.3rem;
 }
 
 #text {
   text-align: center;
   line-height: 140%;
+  font-size: x-large;
+  padding-inline: 1rem;
+  font-weight: 700;
 }
 
 #author {
   position: sticky;
   left: 100%;
   padding: 1rem;
+  font-style: italic;
 }
 
 #box-footer {
@@ -31,17 +34,32 @@
   justify-content: space-between;
 }
 .icon {
-  height: 39px;
-  width: 38px;
+  height: 35px;
+  width: 35px;
   margin: 0;
   padding: 0;
-  color: brown;
+  color: #9370DB;
 }
 
 #new-quote {
-  background-color: brown;
+  background-color: #9370DB;
   border: none;
   cursor: pointer;
   color: white;
   border-radius: .3rem;
+  padding: .3rem;
+  margin: .1rem;
+  font-weight: 700;
+  transition: .5s ease;
+  color: black;
+}
+
+#new-quote:hover {
+  background-color: #c9b3f5;
+}
+
+@media (max-width: 700px) {
+  .App {
+    width: 70%;
+  }
 }

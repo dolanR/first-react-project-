@@ -2,6 +2,7 @@ import './App.css';
 import { useState, useEffect } from 'react';
 import React from 'react';
 import { FaTwitterSquare } from 'react-icons/fa';
+import './index.js'
 
 const quotesWithAuthors = [
   ["The only way to do great work is to love what you do.", "Steve Jobs"],
@@ -22,7 +23,6 @@ const quotesWithAuthors = [
   ["It does not matter how slowly you go as long as you do not stop.", "Confucius"],
   ["The only way to do great work is to love what you do.", "Steve Jobs"]
 ];
-
   
 function App() {
   useEffect(() =>{
@@ -35,13 +35,14 @@ function App() {
     setQuote(arr[quoteNum][0]);
     setAuthor(arr[quoteNum][1]);
   }
+  
   return (
     <div className="App flex" id="quote-box">
       <p id="text">{quote}</p>
       <p id="author">- {author}</p>
       <div id="box-footer" class="flex">
-        <a id="tweet-quote" href="https://twitter.com/intent/tweet" target="_blank"><FaTwitterSquare class="icon"/></a>
-        <button id="new-quote" onClick={() => quoteGen(quotesWithAuthors)}>New quote</button>
+        <a id="tweet-quote" href="https://twitter.com/intent/tweet" rel="noopener noreferrer" target="_blank"><FaTwitterSquare class="icon"/></a>
+        <button id="new-quote" onClick={() => quoteGen(quotesWithAuthors)}>New Quote</button>
       </div>
     </div>
   );
